@@ -82,6 +82,13 @@ raveberry system-install
 ```
 Your database will be preserved, unless you specify a database backup in your config file.
 
+Updating Docker:
+```
+docker-compose stop
+docker-compose pull
+docker-compose up -d
+```
+
 ## Features
 
 * **Live Updates**:
@@ -167,6 +174,11 @@ sudo cp -r backup_{timestamp}/* /
 To remove files created during the setup run
 ```
 sudo scripts/uninstall.sh
+```
+
+Docker:
+```
+docker-compose rm
 ```
 
 ## FAQ
